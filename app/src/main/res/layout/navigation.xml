@@ -11,7 +11,8 @@
         android:drawableTop="@drawable/ic_navigation_status"
         android:text="@string/navigation_item_status"
         app:layout_constraintEnd_toStartOf="@id/menu_item_room_agenda"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+    </androidx.appcompat.widget.AppCompatTextView>
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/menu_item_room_agenda"

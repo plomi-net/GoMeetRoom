@@ -129,7 +129,7 @@
         style="@style/StatusButton"
         android:layout_width="0dp"
         android:layout_marginStart="2dp"
-        android:layout_marginEnd="2dp"
+        android:layout_marginEnd="0dp"
         android:text="30 min"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -141,11 +141,24 @@
         android:id="@+id/book_60"
         style="@style/StatusButton"
         android:layout_width="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
         android:text="60 min"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/book_more"
         app:layout_constraintStart_toEndOf="@id/book_30"
+        app:layout_constraintTop_toTopOf="@id/buttonsBottomGuideline" />
+
+    <Button
+        android:id="@+id/book_more"
+        style="@style/StatusButton"
+        android:layout_width="0dp"
+        android:text="60+ min"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/book_60"
         app:layout_constraintTop_toTopOf="@id/buttonsBottomGuideline" />
 
     <Button

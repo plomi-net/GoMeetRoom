@@ -53,6 +53,7 @@ public class StatusFragment extends Fragment {
     private Button btnBook15;
     private Button btnBook30;
     private Button btnBook60;
+    private Button btnBookMore;
     private Button btnEndNow;
     private ViewGroup fragmentContainer;
 
@@ -95,6 +96,7 @@ public class StatusFragment extends Fragment {
         btnBook15 = view.findViewById(R.id.book_15);
         btnBook30 = view.findViewById(R.id.book_30);
         btnBook60 = view.findViewById(R.id.book_60);
+        btnBookMore = view.findViewById(R.id.book_more);
         btnEndNow = view.findViewById(R.id.end_now);
     }
 
@@ -120,6 +122,7 @@ public class StatusFragment extends Fragment {
         setupBookNowButton(roomAvailability, btnBook15, standardMinutes(15));
         setupBookNowButton(roomAvailability, btnBook30, standardMinutes(30));
         setupBookNowButton(roomAvailability, btnBook60, standardMinutes(60));
+        setupBookNowButton(roomAvailability, btnBookMore, standardMinutes(180));
         setupEndNowButton(roomAvailability);
 
         tvStatus.setText(roomAvailability.getStringRes());
