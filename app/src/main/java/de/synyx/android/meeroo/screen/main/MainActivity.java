@@ -20,6 +20,7 @@ import de.synyx.android.meeroo.config.Registry;
 import de.synyx.android.meeroo.preferences.PreferencesService;
 import de.synyx.android.meeroo.screen.FullscreenActivity;
 import de.synyx.android.meeroo.screen.main.lobby.LobbyFragment;
+import de.synyx.android.meeroo.screen.main.status.BookMoreNowDialogFragment;
 import de.synyx.android.meeroo.screen.main.status.BookNowDialogFragment;
 import de.synyx.android.meeroo.screen.main.status.EndNowDialogFragment;
 import de.synyx.android.meeroo.screen.main.status.MeetingRoomViewModel;
@@ -31,7 +32,9 @@ import static de.synyx.android.meeroo.screen.main.MainNavigationController.SELEC
 
 
 public class MainActivity extends FullscreenActivity implements LobbyFragment.RoomSelectionListener,
-        BookNowDialogFragment.BookNowDialogListener, EndNowDialogFragment.EndNowOnDialogListener {
+        BookNowDialogFragment.BookNowDialogListener,
+        BookMoreNowDialogFragment.BookMoreNowDialogListener,
+        EndNowDialogFragment.EndNowOnDialogListener {
 
     private static final String KEY_SELECTED_MENU_ITEM = "key_selected_menu_item";
 

@@ -122,7 +122,7 @@ public class StatusFragment extends Fragment {
         setupBookNowButton(roomAvailability, btnBook15, standardMinutes(15));
         setupBookNowButton(roomAvailability, btnBook30, standardMinutes(30));
         setupBookNowButton(roomAvailability, btnBook60, standardMinutes(60));
-        setupBookNowButton(roomAvailability, btnBookMore, standardMinutes(180));
+        setupBookNowButton(roomAvailability, btnBookMore, standardMinutes(120));
         setupEndNowButton(roomAvailability);
 
         tvStatus.setText(roomAvailability.getStringRes());
@@ -166,8 +166,15 @@ public class StatusFragment extends Fragment {
     private void setupBookNowButton(RoomAvailability roomAvailability, Button button, Duration minutes) {
 
         button.setTextColor(getActivity().getColor(roomAvailability.getColorRes()));
-        button.setOnClickListener(view ->
-                new BookNowDialogFragment().addDuration(minutes).show(getFragmentManager(), "BookNowDialog"));
+
+
+        if (button.getId() == R.id.book_more) {
+            button.setOnClickListener(view ->
+                    new BookMoreNowDialogFragment().addDuration(minutes).show(getFragmentManager(), "BookNowDialog"));
+        } else {
+            button.setOnClickListener(view ->
+                    new BookNowDialogFragment().addDuration(minutes).show(getFragmentManager(), "BookNowDialog"));
+        }
         button.setVisibility(roomAvailability == AVAILABLE ? VISIBLE : GONE);
     }
 

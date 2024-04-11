@@ -17,6 +17,7 @@
     <string name="book_now_dialog_message">Willst du diesen Meeingraum ab sofort für %1$d Minuten buchen?</string>
     <string name="book_now_dialog_confirm">Ab sofort buchen</string>
     <string name="book_now_dialog_cancel">Abbrechen</string>
+    <string name="book_more_now_suffix_hours">%1$s Stunden</string>
     <string name="end_now_dialog_title">Raum freigeben?</string>
     <string name="end_now_dialog_message">Möchten Sie die aktuelle Reservierung für diesen Raum beenden und den Raum freigeben?</string>
     <string name="end_now_dialog_confirm">Raum freigeben</string>
