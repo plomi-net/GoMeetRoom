@@ -19,8 +19,8 @@ android {
         // Specifies the API level used to test the app.
         targetSdkVersion 34
 
-        versionCode 8
-        versionName "1.3.3"
+        versionCode 9
+        versionName "1.3.3a (Meroo Fork)"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 

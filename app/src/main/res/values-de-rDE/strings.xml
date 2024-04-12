@@ -74,5 +74,5 @@
     <string name="recommended_for_google">Empfohlen für Google-Kalender</string>
     <string name="recommended_for_caldav">Empfohlen für CalDAV-Kalender</string>
     <string name="settings_general">Allgemein</string>
-    <string name="settings_about">Über MeeRoo</string>
+    <string name="settings_about">Über GoMeetRoom</string>
 </resources>
